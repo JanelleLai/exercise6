@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN-CA">
   
 <head>
 <title>Exercise 7: Banh Mi, menus, and layout</title>
@@ -16,17 +16,22 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 16px;
-  width: 960px;
-}
+  text-align: center;
+  }
    
   h1 {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  text-align: center;
+  font-size: 30px;
   }
   
   #site-title {
+    font-weight: 500;
+    font-style: bold;
+    font-size: 50px;
   }
   
   nav {
@@ -42,8 +47,9 @@
   padding: 0;
   }
   
-  ul li {
-  float: left;
+  li {
+  display: inline-block;
+  margin-right: 20px;
   }
   
   ul li a {
@@ -58,12 +64,37 @@
   }
     
   footer {
+    background-color: lightblue;
+    align-content: center;
+    padding: 30px;
+    margin: 20px;
+  }
+  
+ .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: lightblue;
+  padding: 30px;
+  column-gap: 0px;
+  row-gap: 30px;
+  margin: 20px auto;
+  place-items: center;
+}
+.container div {
+  background-color: white;
+  font-size: 10px;
+  padding-bottom: 10px;
+  width: 250px;
+}
+  
+  .container div p {
+    margin: 20px;
   }
   
 </style>
 </head>
-  
-<body><h1 id="site-title">Greg’s Banh Mi</h1>
+<body>
+  <h1 id="site-title">Greg’s Banh Mi</h1>
   
 <nav>
  <ul>
@@ -76,17 +107,22 @@
   
 <h1>At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.</h1>
   
-<image>
-  
-  </image>
+  <div class="container">
+  <div><img src="banh-mi.jpg" alt="sandwich close up picture" style="width:250px;">
 <h2>Classic Pork Banh Mi</h2>
-<p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
+<p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p></div>
+  <div><img src="banh-mi.jpg" alt="sandwich close up picture" style="width:250px;">
 <h2>Lemongrass Chicken Banh Mi</h2>
-<p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
-<h2>Tofu Banh Mi</h2>
-<p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
-<h2>Five-Spice Beef Banh Mi</h2>
-<p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
+<p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p></div>
+  <div><img src="banh-mi.jpg" alt="sandwich close up picture" style="width:250px;">
+   <h2>Tofu Banh Mi</h2>
+<p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p></div>  
+  <div><img src="banh-mi.jpg" alt="sandwich close up picture" style="width:250px;">
+    <h2>Five-Spice Beef Banh Mi</h2>
+<p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p></div>
+  
+</div>
+
 <footer>Because life's too short for boring sandwiches. Greg's got you covered—one crispy baguette at a time.</footer>
 </body>
 </html>
